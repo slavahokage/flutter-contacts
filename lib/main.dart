@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:contacts_app/seeContactsButton.dart';
+import 'package:permission_handler/permission_handler.dart';
+import 'package:contacts_app/contactsPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -23,12 +25,10 @@ class MyHomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
       body: Center(
-        child: SeeContactsButton(),
+        child: ContactsPage(),
       ),
     );
   }

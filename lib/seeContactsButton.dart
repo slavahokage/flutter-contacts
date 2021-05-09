@@ -18,7 +18,7 @@ class SeeContactsButton extends StatelessWidget {
               context: context,
               builder: (BuildContext context) => CupertinoAlertDialog(
                     title: Text('Permissions error'),
-                    content: Text('Please enable contacts access '
+                    content: Text('Please enable contac ts access '
                         'permission in system settings'),
                     actions: <Widget>[
                       CupertinoDialogAction(
